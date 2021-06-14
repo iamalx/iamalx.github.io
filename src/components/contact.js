@@ -12,7 +12,7 @@ const Contact = ( { mobileHg } ) => {
     }  
     
     return (
-        <div className={`error-bar pb-3 hr-center`}>
+        <div className={`error-bar pb-3 hr-center`}  data-aos="fade-left">
             <ContactForm handleSubtmit={handleSubtmit} mobileHg={mobileHg}/>
         </div>
     );

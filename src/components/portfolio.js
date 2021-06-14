@@ -49,25 +49,27 @@ const projects = [
 const Portfolio = () => {
 
     return (
-        <div className='error-bar pb-5' >
+        <div className='pb-5' >
             <h2 className='sub-font mb-4'><u>Portfolio</u></h2>
-            <Container>
-                <Row>
-                    {projects.map(elem => (
-                        <Col key={elem.title} xs={12} sm={6} md={4} className='mb-5'>
-                            <Card style={{ width: '100%' }} className='card-effects'>
-                                <Card.Body>
-                                    <Card.Title>{elem.title}</Card.Title>
-                                        <Card.Text>
-                                            {elem.text}
-                                        </Card.Text>
-                                    <Card.Link target='_blank' href={elem.link}>{elem.linkName}</Card.Link>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    ))}                  
-                </Row>
-            </Container>
+            <div data-aos="fade-up">
+                <Container>
+                    <Row>
+                        {projects.map(elem => (
+                            <Col key={elem.title} xs={12} sm={6} md={4} className='mb-5'>
+                                <Card style={{ width: '100%' }} className='card-effects'>
+                                    <Card.Body>
+                                        <Card.Title>{elem.title}</Card.Title>
+                                            <Card.Text>
+                                                {elem.text}
+                                            </Card.Text>
+                                        <Card.Link target='_blank' href={elem.link}>{elem.linkName}</Card.Link>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        ))}                  
+                    </Row>
+                </Container>
+            </div>
 
             
         </div>

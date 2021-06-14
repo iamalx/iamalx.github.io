@@ -6,7 +6,7 @@ const AboutMe = () => {
     // const [ userList, setUserList ] = useState([])
 
     return (
-        <div className='error-bar  white-font '>
+        <div className='error-bar  white-font' data-aos="fade-right">
             <h2 className='sub-font mb-4 pt-2'><u>More About Me</u></h2>
             <p>
                 I'm ambitious, creative, innovation-focused, avid programmer,
