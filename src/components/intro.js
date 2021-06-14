@@ -20,17 +20,17 @@ const Intro = () => {
                 setH2(val => setH2(val.concat(finalString.charAt(index))))
             else 
                 setH2Second(val => setH2Second(val.concat(finalString.charAt(index))))
-        
+
             if(index >= finalString.length) {
                 index = 0
                 clearInterval(interval) 
             }
-        
+
             index++
         }, 100)
-    
+
     }, []) 
-        
+
     return (
         <div className='error-bar white-font intro-mn-hg' >
             <h1 className='h-font white-font'>{h1? h1:' '}</h1>

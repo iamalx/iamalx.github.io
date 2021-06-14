@@ -10,13 +10,18 @@
 }
 
 .viewport-hg {
-  height: calc(100vh - 62px);
+  height: calc(100vh - 58px);
 }
 
 .vr-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.nav-config {
+  z-index: 100;
+  position: relative;
 }
 
 .hr-center {
@@ -43,7 +48,7 @@
 
 .top-diagonal-wr {
   transform: skewY(1deg);
-  margin-top: -11px
+  margin-top: -15px
 }
 
 .top-diagonal-in {
@@ -54,7 +59,6 @@
   box-shadow: 1px 1px 4px lightgrey;
   /* border: 1px solid rgb(206 206 206 / 13%); */
 }
-
 
 .form-container {
   display: flex;
@@ -80,30 +84,6 @@
   /* font-size: 10px; */
 }
 
-.btn {
-  background-color: rgb(39, 37, 37);
-  color: white; 
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.btn-disabled {
-  background-color:rgb(98, 98, 98);
-  color: rgb(162, 162, 162);
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.btn-del {
-  background-color:rgb(184, 39, 39);
-  border: none;
-}
-
-.btn-del:hover {
-  background-color:rgb(211, 80, 80);
-  border: none;
-}
-
 .error-bar {
   /* border: 1px solid red; */
 }
@@ -118,48 +98,6 @@
 
 .cl-width {
   width: 350px;
-}
-
-.users-container {
-  margin-top: 74px;
-}
-
-.user-div {
-  background-color: rgb(216, 216, 216);
-  display: flex;
-  flex-direction: column;
-  border-radius: 3px;
-  margin-bottom: 4px;
-}
-
-.name {
-  font-size: large;
-  display: flex;
-  margin-left: 4px;
-  justify-content: space-between;
-}
-
-.email {
-  font-size: xx-small;
-  margin-left: 4px;
-}
-
-.note {
-  margin-top: 5px;
-  font-size: small;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-bottom: 4px;
-  background-color: rgb(197, 197, 197);
-  border-radius: 3px;
-}
-
-.note-label {
-  font-size: small;
-  margin-right: 3px;
-  background-color: rgb(154, 154, 154);
-  border-radius: 3px;
-  padding: 1px;
 }
 
 

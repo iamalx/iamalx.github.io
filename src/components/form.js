@@ -66,7 +66,8 @@ const ContactForm = ({ handleSubtmit, mobileHg }) => {
                         <Button variant="light"
                             type='submit' 
                             disabled={formik.isValid & formik.dirty ? false: true}
-                            >Light
+                            className='mt-3'
+                            >Submit
                         </Button>
 
                     </Form>

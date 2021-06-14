@@ -40,8 +40,8 @@ const App = () => {
     
     return (
         <div>
-            <div className='marine-blue'>
-            <Container>
+            <div className='marine-blue nav-config'>
+            <Container >
                 <Nav className="justify-content-end" activeKey="/home">
                     <Nav.Item>
                         <Nav.Link 
@@ -104,39 +104,38 @@ const App = () => {
             <div className={`marine-blue ${mobileHg >= 990 && 'viewport-hg'}  vr-center top-diagonal-wr  `}>
                 <Container className='top-diagonal-in'>
                     {mobileHg <= 766  ?
-                                <Row>      
-                                    <Col sm={12}>
-                                        <div ref={aboutMeRef} >
-                                            <AboutMe />
-                                        </div>
-                                    </Col>
-                                    <Col sm={12}> 
-                                        <div ref={contactRef} >
-                                            <Contact mobileHg={mobileHg} />
-                                        </div>                                        
-                                    </Col>
-                                </Row>
-                            :
-                                <Row>  
-                                    <Col > 
-                                        <div ref={aboutMeRef} >
-                                            <AboutMe />
-                                        </div>
-                                    </Col>
-                                    <Col > 
-                                        <div ref={contactRef} >
-                                            <Contact mobileHg={mobileHg}/>
-                                        </div>
-                                    </Col>
-                                </Row>
-
+                        <Row>      
+                            <Col sm={12}>
+                                <div ref={aboutMeRef} >
+                                    <AboutMe />
+                                </div>
+                            </Col>
+                            <Col sm={12}> 
+                                <div ref={contactRef} >
+                                    <Contact mobileHg={mobileHg} />
+                                </div>                                        
+                            </Col>
+                        </Row>
+                    :
+                        <Row>  
+                            <Col > 
+                                <div ref={aboutMeRef} >
+                                    <AboutMe />
+                                </div>
+                            </Col>
+                            <Col > 
+                                <div ref={contactRef} >
+                                    <Contact mobileHg={mobileHg}/>
+                                </div>
+                            </Col>
+                        </Row>
                     }
                 </Container> 
                 
             </div>
             <Container >  
                 <div>
-                    <small> UI built with React & Bootstrap. Deployed with Firebase</small>
+                    <small> UI built with React & Bootstrap. Deployed with Github Pages</small>
                 </div> 
                 </Container>    
         </div>
