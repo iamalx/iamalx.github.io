@@ -3,7 +3,7 @@ import '../App.css';
 
 import ContactForm from '../components/form';              
 
-console.log(ContactForm)
+// console.log(ContactForm)
 const Contact = ( { mobileHg } ) => {
 
     const handleSubtmit = (val) => {
